@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sound Board</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div class="container">
-        <audio id="applause" src="sounds/sound-board_sounds_applause.mp3"></audio>
-        <audio id="boo" src="sounds/sound-board_sounds_boo.mp3"></audio>
-        <audio id="gasp" src="sounds/sound-board_sounds_gasp.mp3"></audio>
-        <audio id="tada" src="sounds/sound-board_sounds_tada.mp3"></audio>
-        <audio id="victory" src="sounds/sound-board_sounds_victory.mp3"></audio>
-        <audio id="wrong" src="sounds/sound-board_sounds_wrong.mp3"></audio>
 
-        <button class="btn">applause</button>
-        <button class="btn">boo</button>
-        <button class="btn">gasp</button>
-        <button class="btn">tada</button>
-        <button class="btn">victory</button>
-        <button class="btn">wrong</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Contact form</title>
+    <script src="script.js" defer></script>
+</head>
 
+<body>
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>
+                    Contact Us
+                </h2>
+                <input id="i1" type="text" class="field" placeholder="Enter Name">
+                <p id="error1" class="error">username should be 8 letters long</p>
+
+                <input id="i2" type="email" class="field" placeholder="Enter Email">
+                <p id="error2" class="error">invalid email</p>
+
+                <input id="i3" type="password" class="field" placeholder="Enter Password">
+                <p id="error3" class="error">should contain a number, special character and an uppercase letter</p>
+
+                <input id="i4" type="password" class="field" placeholder="Confirm Password"></input>
+                <p id="error4" class="error">the password does not match</p>
+
+                <button id="send" class="btn">Send</button>
+            </div>
+        </div>
     </div>
-    </body>
+</body>
 </html>
